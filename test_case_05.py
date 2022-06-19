@@ -40,7 +40,7 @@ def test_basket():
         # Checking if there is one item in the basket
         item = driver.find_elements(By.CLASS_NAME, "cart_item")
         assert len(item) == 1
-        # Remove item from basket //*[@id="remove-sauce-labs-backpack"]
+        # Remove item from basket
         remove_button = wait.until(
             ec.visibility_of_element_located((By.XPATH, '//*[@id="remove-sauce-labs-backpack"]')))
         remove_button.click()
