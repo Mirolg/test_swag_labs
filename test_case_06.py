@@ -30,7 +30,6 @@ def test_sort_low_to_high_price():
         sort_item.send_keys(Keys.ARROW_DOWN)
         sort_item.send_keys(Keys.ENTER)
         # Check price
-        # first_item = wait.until(ec.visibility_of_element_located((By.CLASS_NAME, 'inventory_item_price')))
         first_item = driver.find_element(By.CLASS_NAME, 'inventory_item_price').text
         assert first_item == "$7.99"
         # Close browser
