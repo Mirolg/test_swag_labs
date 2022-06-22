@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from test_swag_labs.pages.basePage import BasePage
+from test_swag_labs.pages.base_page import BasePage
 from test_swag_labs.config.config import TestData
 
 
