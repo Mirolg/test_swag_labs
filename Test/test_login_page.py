@@ -1,6 +1,6 @@
 import pytest
-from test_swag_labs.Pages.LoginPage import LoginPage
-from test_swag_labs.Test.testBase import BaseTest
+from test_swag_labs.pages.login_page import LoginPage
+from test_swag_labs.Test.base_test import BaseTest
 from test_swag_labs.config.config import TestData
 
 

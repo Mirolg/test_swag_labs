@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from test_swag_labs.Pages.basePage import BasePage
+from test_swag_labs.pages.basePage import BasePage
 from test_swag_labs.config.config import TestData
 
 
@@ -15,3 +15,5 @@ class BasketPage(BasePage):
 
     def check_basket(self):
         self.get_element_text()
+
+
