@@ -7,7 +7,7 @@ class BasePage:
     def __init__(self, driver):
         self.driver = driver
 
-    def do_click(self, by_class):
+    def click(self, by_class):
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_class)).click()
 
     def do_send_keys(self, by_class, text):

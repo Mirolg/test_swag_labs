@@ -20,24 +20,25 @@ class BasketPage(BasePage):
     def get_login_page_title(self, title):
         return self.get_title(title)
 
-    def do_login(self, username, password):
+    def login(self, username, password):
         self.do_send_keys(self.USERNAME, username)
         self.do_send_keys(self.PASSWORD, password)
-        self.do_click(self.LOGIN_BUTTON)
+        self.click(self.LOGIN_BUTTON)
 
     def go_to_basket(self):
-        self.do_click(self.BASKET)
+        self.click(self.BASKET)
 
-    def check_items_in_basket(self):
+    @property
+    def items_in_basket(self):
         item = self.driver.find_elements(By.CLASS_NAME, self.NAME)
         return len(item)
 
     def continue_shopping(self):
-        self.do_click(self.CONTINUE_SHOPPING_BUTTON)
+        self.click(self.CONTINUE_SHOPPING_BUTTON)
 
     def add_to_basket(self):
-        self.do_click(self.ADD_TO_CART)
+        self.click(self.ADD_TO_CART)
 
     def remove_from_basket(self):
-        self.do_click(self.REMOVE_ITEM_BUTTON)
+        self.click(self.REMOVE_ITEM_BUTTON)
 
