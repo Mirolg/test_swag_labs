@@ -25,11 +25,10 @@ class InventoryPage(BasePage):
         self.do_send_keys(self.PASSWORD, password)
         self.click(self.LOGIN_BUTTON)
 
-    def sort_price_low_to_high(self):
+    def select_sort(self, repeat):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(self.SELECT_SORT))
         element.click()
-        element.send_keys(Keys.ARROW_DOWN)
-        element.send_keys(Keys.ARROW_DOWN)
+        element.send_keys(Keys.ARROW_DOWN * repeat)
         element.send_keys(Keys.ENTER)
 
     @property
