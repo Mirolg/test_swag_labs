@@ -177,6 +177,4 @@ Sort items from most expensive to cheapest
 
 <h3>Expected Behavior:</h3>
 Items should be sorted by names from the end of the alphabet
-=======
 
->>>>>>> a862c69396bdf52d35206c714fdf1d6808842776
