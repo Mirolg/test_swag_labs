@@ -1,6 +1,8 @@
+import pytest
 from selenium.webdriver.common.by import By
 from test_swag_labs.pages.base_page import BasePage
 from test_swag_labs.config.config import TestData
+from test_swag_labs.pages.driver import driver
 
 
 class LoginPage(BasePage):
@@ -19,3 +21,9 @@ class LoginPage(BasePage):
         self.do_send_keys(self.USERNAME, username)
         self.do_send_keys(self.PASSWORD, password)
         self.click(self.LOGIN_BUTTON)
+
+
+@pytest.fixture()
+def login(driver) -> LoginPage:
+    page = LoginPage(driver)
+    yield page

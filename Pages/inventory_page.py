@@ -1,3 +1,4 @@
+import pytest
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -17,13 +18,13 @@ class InventoryPage(BasePage):
         super().__init__(driver)
         self.driver.get(TestData.URL)
 
-    def get_login_page_title(self, title):
-        return self.get_title(title)
-
-    def do_login(self, username, password):
-        self.do_send_keys(self.USERNAME, username)
-        self.do_send_keys(self.PASSWORD, password)
-        self.click(self.LOGIN_BUTTON)
+    # def get_login_page_title(self, title):
+    #     return self.get_title(title)
+    #
+    # def do_login(self, username, password):
+    #     self.do_send_keys(self.USERNAME, username)
+    #     self.do_send_keys(self.PASSWORD, password)
+    #     self.click(self.LOGIN_BUTTON)
 
     def select_sort(self, repeat):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(self.SELECT_SORT))
@@ -37,5 +38,9 @@ class InventoryPage(BasePage):
         return element.text
 
 
+@pytest.fixture()
+def inventory_page(driver) -> InventoryPage:
+    page = InventoryPage(driver)
+    yield page
 
 
