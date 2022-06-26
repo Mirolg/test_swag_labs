@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1>SWAG LABS - Test Cases</h1>
 
 <h2>Checking the title of the page</h2>
