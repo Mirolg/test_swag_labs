@@ -11,10 +11,7 @@ Test login_title
     Title Should Be    Swag Labs
 
 Test login_correct
-    Open Shop Webpage
-    Input Text      ${LOGIN_INPUT}       ${USERNAME_LOGIN}
-    Input Text      ${PASSWORD_INPUT}    ${USERNAME_PASSWORD}
-    Click Button    ${LOGIN_BUTTON}
+    Open Shop Webpage And Correct Login
     Location Should Be      ${URL_INVENTORY}
 
 Test Incorrect Login And Password
