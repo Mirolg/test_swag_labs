@@ -1,8 +1,8 @@
 import pytest
-from test_swag_labs.pages.login_page import LoginPage, login
-from test_swag_labs.pages.basket_page import BasketPage
-from test_swag_labs.config.test_data import TestData
-from test_swag_labs.pages.driver import driver
+from .test_swag_labs.pages.login_page import LoginPage, login
+from .test_swag_labs.pages.basket_page import BasketPage
+from .test_swag_labs.config.test_data import TestData
+from .test_swag_labs.pages.driver import driver
 
 
 class TestBasket:
