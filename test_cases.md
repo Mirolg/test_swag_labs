@@ -6,7 +6,7 @@
 
 <h3>Steps:</h3>
 
-- Open Chrome browser.<br />
+- Open Chrome browser. <br/>
 - Go to the website https://www.saucedemo.com/<br />
 - Check title of the website.<br />
 
@@ -19,12 +19,12 @@ The page title is Swag Labs
 <h3>TSLW-T2</h3>
 
 <h3>Test Data:</h3>
--Username: standard_user<br />
+-Username: standard_user <br/>
 -Password: secret_sauce<br />
 
 <h3>Steps:</h3>
 - Open Chrome browser.<br />
-- Go to the website https://www.saucedemo.com/<br />
+- Go to the website https://www.saucedemo.com/ <br/>
 - Input a valid username.<br />
 - Input a valid password.<br />
 - Press the log in button.<br />
@@ -44,7 +44,7 @@ User account is accessed.
 
 <h3>Steps:</h3>
 - Open Chrome browser. <br />
-- Go to the website https://www.saucedemo.com/ <br />
+- Go to the website https://www.saucedemo.com/ <br/>
 - Input a invalid username. <br />
 - Input a invalid password. <br />
 - Press the log in button. <br />
