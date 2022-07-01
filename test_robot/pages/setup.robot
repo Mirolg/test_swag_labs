@@ -3,6 +3,9 @@ Library  SeleniumLibrary
 Resource    ../resources.resource
 
 *** Keywords ***
+Prepare Env
+    Set Screenshot Directory        ../screenshots
+
 Open Shop Webpage
 
     OPEN BROWSER                     ${URL}        ${BROWSER}

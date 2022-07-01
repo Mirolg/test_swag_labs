@@ -3,6 +3,14 @@ Library          SeleniumLibrary
 Resource         ../pages/setup.robot
 Resource         ../resources.resource
 Test Teardown    Close All Browsers
+Suite Setup     Prepare Env
+
+
+
+*** Keywords ***
+Prepare Env
+    Set Screenshot Directory        ../screenshots
+
 
 *** Test Cases ***
 Test Sort Price Low To High
