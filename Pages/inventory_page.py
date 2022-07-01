@@ -3,8 +3,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from test_swag_labs.pages.base_page import BasePage
-from test_swag_labs.config.test_data import TestData
+from pages.base_page import BasePage
+from config.test_data import TestData
 
 
 class InventoryPage(BasePage):

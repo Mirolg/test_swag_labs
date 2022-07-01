@@ -1,8 +1,8 @@
 import pytest
 from selenium.webdriver.common.by import By
-from test_swag_labs.pages.base_page import BasePage
-from test_swag_labs.config.test_data import TestData
-from test_swag_labs.pages.driver import driver
+from pages.base_page import BasePage
+from config.test_data import TestData
+from pages.driver import driver
 
 
 class LoginPage(BasePage):
