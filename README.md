@@ -6,7 +6,7 @@
 Project under development to demonstrate my testing skills. </br>
 
 
-The project includes a test plan and tests using selenium and a robot framework.
+The project includes a test plan and tests of the website https://www.saucedemo.com using selenium and a robot framework.
 
 
 
